@@ -84,12 +84,51 @@ body {
     margin-top: 20pt;
 }
 
-.betatest {
+#error {
+    display: none;
+    width: auto;
+    height: auto;
+    font-size: 20pt;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: white;
+    background: #F13F5F;
+    padding: 25px;
+}
+#error.active {
+    display: block;
+}
+
+.instruction {
+    padding: 30px;
+    display: block;
+    width: auto;
+    height: auto;
+    background: #05113E;
+    color: white;
+    text-align: left;
+}
+.instruction span {
+    font-size: 25pt;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: white;
+}
+.instruction p {
+    font-size: 15pt;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.news {
     display: block;
     width: auto;
     height: auto;
     padding: 30px;
-    background: #061A50;
+    background: #081649;
     font-size: 20px;
     font-family: 'Roboto';
     font-weight: 700;
