@@ -14,9 +14,19 @@ body, head {
 }
 
 body {
-    background: linear-gradient(180deg, #0A1520 0%, #0A2B49 100%);
+    background: #040E16;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.center {
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 button {
@@ -60,33 +70,20 @@ button.err {
 
 .bomb {
     position: relative;
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     padding: 45px;
-    text-align: left;
+    text-align: center;
     background: rgba(0, 0, 0, 0);
     color: #010F32;
     align-items: center;
+    margin: 0 auto;
 }
 
 .bomb .b {
     display: inline-block;
-    margin-right: auto;
-    margin-left: 0;
-}
-.bomb .img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: 0;
-}
-.bomb .img img {
-    transition: 0.2s all;
-    height: 320px;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    pointer-events: none;
+    margin: 0 auto;
 }
 
 .bomb span {
@@ -134,18 +131,8 @@ input {
     display: block;
 }
 
-@media(max-width: 1050px) {
-    .bomb .img img {
-        height: 250px;
+@media (max-width: 385px) {
+    .bomb span {
+        font-size: 25px;
     }
-    @media (max-width: 960px) {
-        .bomb .img img {
-            display: none;
-        }
-    }
-    @media (max-width: 385px) {
-        .bomb span {
-            font-size: 25px;
-        }
-    } 
-}
+} 
